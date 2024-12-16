@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories for kindergarten</title>
+    <style>
+      
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf0ca;
+  color: #333;
+}
+/* Navigation Menu Styles */
+nav {
+    background-color: #df1d16;
+    padding: 20px 0;
+    border-bottom: 5px solid #7b1111;
+    border-top: 5px solid #7b1111;
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #120909;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #fff8e1;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #63cf04;
+    transform: scale(1.1);
+}
+
+/* Header styles */
+.header {
+    font-size: 25px;
+    font-family: fantasy;
+    font-weight: 500;
+    background-color: #ff7f50;
+    color: rgb(23, 9, 9);
+    padding: 20px;
+    text-align: center;
+}
+#bar1{
+    height: 220px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#bar2{
+    height: 220px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/* Main content styling */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Left Box */
+.left-box {
+    width: 45%;
+}
+
+/* Hover Box Styling */
+.story1{
+    position: relative;
+    left: 150px;
+    background-color: #45f2c7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the box */
+.story1:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.story1 p {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 2.0;
+    font-size: 18px;
+    margin: 0px;
+    color: #333;
+}
+#story2{
+    position: absolute;
+    top: 800px;
+    right: 150px;
+    background-color: #45f2c7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the box */
+#story2:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#story2 p {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 2.0;
+    font-size: 18px;
+    margin: 0px;
+    color: #333;
+}
+
+/* Right Image Section */
+.right-image {
+    width: 45%;
+}
+
+#imgcrow {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    right: 150px;
+}
+
+#rabbit{
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 850px;
+    left: 150px; 
+}
+#story3{
+    position: absolute;
+    top: 1450px;
+    left: 150px;
+    background-color: #45f2c7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the box */
+#story3:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#story3 p {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 2.0;
+    font-size: 18px;
+    margin: 0px;
+    color: #333;
+}
+#lion{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 1450px;
+    right: 170px; 
+}
+#story4{
+    position: absolute;
+    top: 2150px;
+    right: 150px;
+    background-color: #45f2c7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the box */
+#story4:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#story4 p {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 2.0;
+    font-size: 18px;
+    margin: 0px;
+    color: #333;
+}
+#ant{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 2250px;
+    left: 170px; 
+}
+
+/* Footer */
+footer {
+    background-color: #123456; /* Dark blue background for the footer */
+    color: #fff;
+    padding: 30px 0;
+    text-align: left;
+    margin-top: 2000px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Footer container for layout */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer logo section (if applicable) */
+.footer-logo {
+    max-width: 300px;
+    text-align: center;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+/* Social icons */
+.social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Store buttons for app stores (if applicable) */
+.store-buttons a img {
+    width: 120px;
+    margin: 5px;
+}
+
+/* Footer sections like "For Parents", "Learniverse", etc. */
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Image styles for logos or icons */
+.image {
+    height: 90px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Fun Tales for Little Hearts!</h1>
+        <p>Let’s Read and Explore Together</p>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="Eng.html" style="font-size: 20px;">English-Home</a></li>
+                <li><a href="alphabet.html" style="font-size: 20px;">ABC</a></li>
+                <li><a href="animals.html" style="font-size: 20px;">Animals</a></li>
+                <li><a href="stories.html" style="font-size: 20px;">Stories</a></li>
+                <li><a href="rhymes.html" style="font-size: 20px;">Rhymes</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <img src="storyimage/children-playing-with-their-dogs_1308-100860.jpg" alt="kids" id="bar1">
+        <img src="storyimage/children-with-their-dogs-white-background_1308-79938.jpg" alt="child" id="bar2">
+    </div>
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="story1">
+            <h1>The Crow and the Pebbles</h1>
+            <p><strong>Once upon a time,</strong> a thirsty crow was flying around looking for water.</p><p>It was a hot day, and the crow was very tired.</p>
+            <p>Finally, the crow saw a pot with a little bit of water at the bottom. </p>
+            <p>It tried to drink from the pot, but the water was too low.</p>
+            <p>The crow couldn't reach it!</p>
+            <p>The clever crow thought of a plan. It picked up small pebbles</p>
+            <p>one by one and dropped them into the pot.</p><p>Slowly, the water in the pot began to rise.</p>
+            <p>After a few more pebbles, the water was high enough</p><p>for the crow to drink. The crow was happy and drank the cool water.</p>
+            <p>The crow smiled and flew away, feeling proud of its smart idea.</p>
+        </div>
+        <div>
+            <img src="storyimage/crow-is-putting-stone-rock-earthen-pot_642458-3583.jpg" alt="crow" id="imgcrow">
+        </div>
+
+        <div id="story2">
+            <h1>The Rabbit and the Tortoise</h1>
+            <p><strong>Once upon a time,</strong> there was a rabbit</p>
+            <p>who was very proud of how fast he could run.</p>  
+            <p>One day, he challenged the tortoise to a race.</p>
+            <p>The tortoise was slow, but he accepted the challenge.</p> 
+            <p>The race started, and the rabbit quickly ran far ahead.</p>
+            <p>Feeling confident, the rabbit decided to take a nap.</p>
+            <p>He thought, "I’m so fast, I’ll easily win the race!"</p>
+            <p>The tortoise kept going, slowly but surely. </p>
+            <p>While the rabbit slept, the tortoise passed him</p>
+            <p>and reached the finish line.</p>
+            <p>When the rabbit woke up, he saw the tortoise </p>
+            <p>had already won! The rabbit learned </p>
+            <p><strong>that slow and steady wins the race.</strong></p>
+        </div>
+        <div>
+            <img src="storyimage/bunny-sleep-tree-while-tortoise-run-road_33070-4661.jpg" alt="slow" id="rabbit">
+        </div>
+        
+        <div id="story3">
+            <h1>The Lion and the Mouse</h1>
+            <p><strong>Once upon a time,</strong> there was a mighty lion who was taking a nap </p>
+            <p>in the forest. Suddenly, a little mouse ran across  the lion's </p>
+            <p>paw, waking him up! waking him up! and caught the mouse </p>
+            <p>and caught the mouse in his large paw. The terrified </p>
+            <p>mouse begged the lion to let him go. "Please let me go,</p>
+            <p> and one day I will help you in return!" said the mouse.</p>
+            <p>The lion, feeling generous, decided to release the mouse.</p>
+            <p>A few days later, the lion was caught in a hunter's net </p>
+            <p>and roared in frustration. The mouse heard the lion's </p>
+            <p>cries and rushed to help. The mouse gnawed through</p>
+            <p>the ropes of the net and set the lion free. The lion was</p>
+            <p> so grateful and realized that even the smallest creatures</p>
+            <p>can be of great help. From that day on, the</p>
+            <p> lion and the mouse became good friends.</p>
+        </div>
+        <div>
+            <img src="storyimage/th (1).jpeg" alt="lion" id="lion">
+        </div>
+        <div id="story4">
+            <h1>The Ant and the Grasshopper</h1>
+            <p>Once, an ant worked hard all summer, </p>
+            <p>storing food for winter. A grasshopper asked, </p>
+            <p>"Why are you working so hard? Come, enjoy the sun!"</p>
+            <p>The ant replied, "I need food for the winter."</p>
+            <p>"Why are you working so hard? Come, enjoy the sun!"</p>
+            <p>When winter came, the grasshopper had no food and</p>
+            <p>asked the ant for help. The ant said, </p>
+            <p>"I worked hard, now I have enough food. </p>
+            <p>You should have planned ahead."</p></p>
+            <p><strong>The grasshopper learned that hard work and</strong></p>
+            <p><strong>planning are important for the future</strong></p>
+        </div>
+        <div>
+            <img src="storyimage/cartoon-ant-grasshopper_29190-765.jpg" alt="ant" id="ant">
+        </div>
+
+        <div>
+            
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>LEARNIVERSE</h1>
+                <p>Preparing kids everywhere with the skills they'll need for the world of tomorrow.</p>
+                <img src="Images/logo formatted.png" alt="" class="image">
+        
+              </div>
+            <!-- For Parents section -->
+            <div class="footer-section">
+                <h3>For Parents</h3>
+                <ul>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Start a Free Trial</a></li>
+                    <li><a href="#">Subscription</a></li>
+                </ul>
+            </div>
+    
+            <!-- Learniverse section -->
+            <div class="footer-section">
+                <h3>LEARNIVERSE</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">The Foo Store</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Footer bottom section -->
+        <div class="footer-bottom">
+            <p>© Learniverse 2024</p>
+            <p>All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

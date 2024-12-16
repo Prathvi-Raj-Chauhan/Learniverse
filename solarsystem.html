@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2d2d2d;
+            color: white;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #ffcc00;
+        }
+
+        .planet-container {
+            
+            display: flex;
+            justify-content: space-between;
+
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .planet {
+            margin: 20px;
+            text-align: center;
+            width: 150px;
+        }
+
+        .planet img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .planet-name {
+            color: #ffcc00;
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .planet-description {
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .images{
+            padding-left: 130px;
+            padding-top: 30px;
+        }
+        footer {
+    background-color: rgb(238, 171, 47);
+    color:#2c3e50;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+.footer {
+    background-color: #123456; /* Replace with your color code */
+    color: #fff;
+    padding: 30px 0;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .store-buttons a img {
+    width: 120px;
+    margin: 5px;
+  }
+  
+  .footer-section {
+    max-width: 200px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  .footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>The Solar System</h1>
+    </header>
+<div class="images">
+    <img src="images-s/solar.jpg" >
+</div>
+<div>
+    <h1 style="text-align: center;color: #ffcc00;">Now let's us learn more about these planets.</h1>
+</div>
+    <div class="planet-container">
+        <div class="planet">
+            <img src="images-s/mercury.png" alt="Mercury">
+            <div class="planet-name">Mercury</div>
+            <div class="planet-description">Mercury is the closest planet to the Sun.</div>
+        </div>
+        <div class="planet">
+            <img src="images-s/venus.png" alt="Venus">
+            <div class="planet-name">Venus</div>
+            <div class="planet-description">Venus is similar in size to Earth but is much hotter.</div>
+        </div>
+        <div class="planet">
+            <img src="images-s/earth.png" alt="Earth">
+            <div class="planet-name">Earth</div>
+            <div class="planet-description">Earth is the only planet known to support life.</div>
+        </div>
+        
+        
+    </div>
+    <div>
+        <div class="planet-container">
+        <div class="planet">
+            <img src="images-s/mars.png" alt="Mars">
+            <div class="planet-name">Mars</div>
+            <div class="planet-description">Mars is known as the Red Planet due to its reddish color.</div>
+        </div>
+        <div class="planet">
+            <img src="images-s/jupiter.png" alt="Jupiter">
+            <div class="planet-name">Jupiter</div>
+            <div class="planet-description">Jupiter is the largest planet in the Solar System.</div>
+        </div>
+        <div class="planet">
+            <img src="images-s/saturn.png" alt="Saturn">
+            <div class="planet-name">Saturn</div>
+            <div class="planet-description">Saturn is famous for its beautiful rings.</div>
+        </div>
+    </div>
+    <div class="planet-container">
+    <div class="planet">
+        <img src="images-s/uranus.png" alt="Uranus">
+        <div class="planet-name">Uranus</div>
+        <div class="planet-description">Uranus spins on its side and has a very cold atmosphere.</div>
+    </div>
+    <div class="planet">
+        <img src="images-s/neptune.png" alt="Neptune">
+        <div class="planet-name">Neptune</div>
+        <div class="planet-description">Neptune is the farthest planet from the Sun and has strong winds.</div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <h1>LEARNIVERSE</h1>
+            <p>Preparing kids everywhere with the skills they'll need for the world of tomorrow.</p>
+            <img src="Images/logo formatted.png" alt="" class="image">
+
+          </div>
+      
+          <div class="footer-section">
+            <h3>For Parents</h3>
+            <ul>
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Start a Free Trial</a></li>
+              <li><a href="#">Subscription</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+
+      
+          <div class="footer-section">
+
+          </div>
+      
+          <div class="footer-section">
+            <h3>LEARNIVERSE</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">The Foo Store</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        
+    </div>
+    <div class="footer-bottom">
+      <p>© Learniverse 2024</p><br>
+      <p>All rights reserved</p>
+      <ul>
+      </footer>
+
+</body>
+</html>

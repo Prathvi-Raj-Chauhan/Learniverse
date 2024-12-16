@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Learning</title>
+    <style>
+        /* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf0ca;
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Menu Styles */
+nav {
+    background-color: #df1d16;
+    padding: 20px 0;
+    border-bottom: 5px solid #7b1111;
+    border-top: 5px solid #7b1111;
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #120909;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #fff8e1;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #63cf04;
+    transform: scale(1.1);
+}
+
+/* Header Section */
+header {
+    background-color: #ff7f50;
+    font-family: fantasy;
+    color: rgb(11, 8, 8);
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Main Content Section */
+main {
+    padding: 20px;
+}
+
+/* Styling for the ABC section */
+.abc-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Styling for each letter box */
+.letter-box {
+    position: absolute;
+    right: 0px;
+    background-color: #f3f714;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 650px;
+    width: 920px;
+}
+
+.letter-box h2 {
+    color: #052b06;
+    font-size: 50px;
+}
+
+.letter-box iframe {
+    border-radius: 10px;
+    margin-top: 5px;
+    height: 450px;
+    width: 100%;
+}
+#abc{
+    height: 180px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#read{
+    height: 180px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#poster{
+    position: absolute;
+    width: 450px;
+    top: 300px;
+    left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(238, 171, 47);
+    color:#2c3e50;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 700px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+.footer {
+    background-color: #123456; /* Replace with your color code */
+    color: #fff;
+    padding: 30px 0;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .store-buttons a img {
+    width: 120px;
+    margin: 5px;
+  }
+  
+  .footer-section {
+    max-width: 200px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  .footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .image{
+    height: 90px;
+  }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Learn Your ABCs!</h1>
+        <p>Click below to watch fun videos and learn!</p>
+    </header>
+    <nav>
+      <div class="container">
+          <ul>
+              <li><a href="Eng.html" style="font-size: 20px;">English-Home</a></li>
+              <li><a href="alphabet.html" style="font-size: 20px;">ABC</a></li>
+              <li><a href="animals.html" style="font-size: 20px;">Animals</a></li>
+              <li><a href="stories.html" style="font-size: 20px;">Stories</a></li>
+              <li><a href="rhymes.html" style="font-size: 20px;">Rhymes</a></li>
+          </ul>
+      </div>
+  </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="abc-section">
+            <div>
+                <img src="alphaimage/font-abc-happy-children_1308-5923.jpg" alt="head" id="abc">
+            </div>
+            <div>
+                <img src="alphaimage/happy-boy-reading-storybook-alone_1308-72444.jpg" alt="boyreading" id="read">
+            </div>
+            <div class="letter-box">
+                <h2>ABC Adventure</h2>
+                <iframe src="https://www.youtube.com/embed/kpy6QEAuLJw" title="ABC Song | Learn ABC Alphabet for Children | Alphabet Mat | Kids Songs &amp; Nursery Rhymes | LiaChaCha" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+                <img src="alphaimage/illustration-alphabet-with-girl-leaning-against-pile-books_43633-10620.jpg" alt="abc" id="poster">
+            </div>
+           
+        </section>
+    </main>
+
+   <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h1>LEARNIVERSE</h1>
+        <p>Preparing kids everywhere with the skills they'll need for the world of tomorrow.</p>
+        <img src="Images/logo formatted.png" alt="" class="image">
+
+      </div>
+  
+      <div class="footer-section">
+        <h3>For Parents</h3>
+        <ul>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Start a Free Trial</a></li>
+          <li><a href="#">Subscription</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+
+  
+      <div class="footer-section">
+
+      </div>
+  
+      <div class="footer-section">
+        <h3>LEARNIVERSE</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">The Foo Store</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    
+</div>
+<div class="footer-bottom">
+  <p>© Learniverse 2024</p><br>
+  <p>All rights reserved</p>
+  <ul>
+  </footer>
+</body>
+</html>

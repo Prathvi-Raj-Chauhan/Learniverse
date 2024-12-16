@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Learning for kindergarten</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navigation Menu Styles */
+nav {
+    /* background-color: #df1d16; */
+    padding: 20px 10px;
+    margin: 20px;
+    /* border-bottom: 5px solid #7b1111;
+    border-top: 5px solid #7b1111; */
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #120909;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #ff8d8d;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #63cf04;
+    transform: scale(1.1);
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial, sans-serif';
+    background-color: #faf0ca;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+#birds{
+    height: 140px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+#monkey{
+    height: 370px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff7f50;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #070707;
+}
+
+/* Animal Card Styling */
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.animal-card {
+    background-color: #7a5409;
+    width: 500px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.animal-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.animal-card h2 {
+    font-size: 2rem;
+    color: #fdfdfd;
+    margin: 10px 0;
+}
+
+.animal-card p {
+    font-size: 1.5rem;
+    color: #e7ea2c;
+}
+
+/* Hover Effect */
+.animal-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #123456; /* Dark blue background for the footer */
+    color: #fff;
+    padding: 30px 0;
+    text-align: left;
+    margin-top: 95px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Footer container for layout */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer logo section (if applicable) */
+.footer-logo {
+    max-width: 300px;
+    text-align: center;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+/* Social icons */
+.social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Store buttons for app stores (if applicable) */
+.store-buttons a img {
+    width: 120px;
+    margin: 5px;
+}
+
+/* Footer sections like "For Parents", "Learniverse", etc. */
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Image styles for logos or icons */
+.image {
+    height: 90px;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Animal Learning Page</h1>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="Eng.html" style="font-size: 20px;">English-Home</a></li>
+                <li><a href="alphabet.html" style="font-size: 20px;">ABC</a></li>
+                <li><a href="animals.html" style="font-size: 20px;">Animals</a></li>
+                <li><a href="stories.html" style="font-size: 20px;">Stories</a></li>
+                <li><a href="rhymes.html" style="font-size: 20px;">Rhymes</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <img src="images/three-parrots-flying-around-birdhouse_1308-29924.jpg" alt="bird" id="birds">
+            <img src="images/monkey-hanging-vine_1308-24390.jpg" alt="monkey" id="monkey">
+        </div>
+        <section class="animal-card">
+            <img src="images/cartoon lion image size 150_150.png" alt="Lion">
+            <h2>Mighty Lion</h2>
+            <p>The lion is the king of the jungle!</p>
+        </section>
+        <section class="animal-card">
+            <img src="images/cartoon elephant image of size 150_150.png" alt="Elephant">
+            <h2>Happy Elephant</h2>
+            <p>The elephant is the largest land animal.</p>
+        </section>
+        <section class="animal-card">
+            <img src="images/cartoon monkey image swinging on a tree of size 150_150.png" alt="Monkey">
+            <h2>Swinging Monkey</h2>
+            <p>Monkeys are very playful and clever!</p>
+        </section>
+        <section class="animal-card">
+            <img src="images/cartoon snake of size 150_150.png" alt="Snake">
+            <h2>Snake</h2>
+            <p>The snake moves like a slinky toy!</p>
+        </section>
+        <section class="animal-card">
+            <img src="images/cartoon giraffe eating leaves from the tree image of size 150_150.png" alt="giraffe">
+            <h2>Gentle Giraffe</h2>
+            <p>The giraffe eats leaves from the tall trees!!</p>
+        </section>
+    </main>
+    <!--Footer section-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>LEARNIVERSE</h1>
+                <p>Preparing kids everywhere with the skills they'll need for the world of tomorrow.</p>
+                <img src="Images/logo formatted.png" alt="" class="image">
+        
+              </div>
+            <!-- For Parents section -->
+            <div class="footer-section">
+                <h3>For Parents</h3>
+                <ul>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Start a Free Trial</a></li>
+                    <li><a href="#">Subscription</a></li>
+                </ul>
+            </div>
+    
+            <!-- Learniverse section -->
+            <div class="footer-section">
+                <h3>LEARNIVERSE</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">The Foo Store</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+</body>
+</html>

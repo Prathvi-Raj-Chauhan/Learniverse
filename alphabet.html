@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Adventure!</title>
+    <style>
+        /* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navigation Menu Styles */
+nav {
+    background-color: #df1d16;
+    padding: 20px 0;
+    border-bottom: 5px solid #7b1111;
+    border-top: 5px solid #7b1111;
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #120909;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #fff8e1;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #63cf04;
+    transform: scale(1.1);
+}
+
+/* Body and general layout */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #faf0ca;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #f94144;
+    padding: 40px;
+    color: white;
+}
+#img{
+    height: 180px;
+    position:absolute;
+    top: 0px;
+    left:0px;
+}
+#kids{
+    height: 180px;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 24px;
+}
+
+/* Main content */
+main {
+    padding: 40px 10px;
+}
+
+.alphabet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.alphabet-card {
+    background-color: #f9c74f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+}
+
+.alphabet-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.alphabet-card h2 {
+    font-size: 36px;
+    color: #277da1;
+    font-weight: bold;
+}
+
+.alphabet-card img {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.alphabet-card p {
+    font-size: 24px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.alphabet-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #123456; /* Dark blue background for the footer */
+    color: #fff;
+    padding: 30px 0;
+    text-align: left;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Footer container for layout */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer logo section (if applicable) */
+.footer-logo {
+    max-width: 300px;
+    text-align: center;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+/* Social icons */
+.social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Store buttons for app stores (if applicable) */
+.store-buttons a img {
+    width: 120px;
+    margin: 5px;
+}
+
+/* Footer sections like "For Parents", "Learniverse", etc. */
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Image styles for logos or icons */
+.image {
+    height: 90px;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .alphabet-card h2 {
+        font-size: 28px;
+    }
+
+    .alphabet-card p {
+        font-size: 20px;
+    }
+
+    .alphabet-card img {
+        width: 120px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alphabet Adventure</h1>
+        <p>Learn the alphabet with fun animals and objects!</p>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="Eng.html" style="font-size: 20px;">English-Home</a></li>
+                <li><a href="alphabet.html" style="font-size: 20px;">ABC</a></li>
+                <li><a href="animals.html" style="font-size: 20px;">Animals</a></li>
+                <li><a href="stories.html" style="font-size: 20px;">Stories</a></li>
+                <li><a href="rhymes.html" style="font-size: 20px;">Rhymes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <img src="alphaimage/children-holding-english-letters_1308-50014.jpg" alt="abc" id="img">
+        </div>
+        <div>
+            <img src="alphaimage/font-design-word-kids_1308-41111.jpg" alt="kid" id="kids">
+        </div>
+        <div class="alphabet-grid">
+            <div class="alphabet-card" id="a">
+                <h2>Aa</h2>
+                <img src="alphaimage/th (24).jpeg" alt="Apple">
+                <p>Apple</p>
+            </div>
+            <div class="alphabet-card" id="b">
+                <h2>Bb</h2>
+                <img src="alphaimage/5 bananas image of size 50_50.png" alt="Banana">
+                <p>Banana</p>
+            </div>
+            <div class="alphabet-card" id="c">
+                <h2>Cc</h2>
+                <img src="alphaimage/th (1).jpeg" alt="Cat">
+                <p>Cat</p>
+            </div>
+            <div class="alphabet-card" id="d">
+                <h2>Dd</h2>
+                <img src="alphaimage/th.jpeg" alt="Dog">
+                <p>Dog</p>
+            </div>
+            <div class="alphabet-card" id="e">
+                <h2>Ee</h2>
+                <img src="alphaimage/th (2).jpeg" alt="Elephant">
+                <p>Elephant</p>
+            </div>
+            <div class="alphabet-card" id="f">
+                <h2>Ff</h2>
+                <img src="alphaimage/th (3).jpeg" alt="fish">
+                <p>Fish</p>
+            </div>
+            <div class="alphabet-card" id="g">
+                <h2>Gg</h2>
+                <img src="alphaimage/th (4).jpeg" alt="goat">
+                <p>Goat</p>
+            </div>
+            <div class="alphabet-card" id="h">
+                <h2>Hh</h2>
+                <img src="alphaimage/th (5).jpeg" alt="horse">
+                <p>Horse</p>
+            </div>
+            <div class="alphabet-card" id="i">
+                <h2>Ii</h2>
+                <img src="alphaimage/th (6).jpeg" alt="icecream">
+                <p>Ice-cream</p>
+            </div>
+            <div class="alphabet-card" id="j">
+                <h2>Jj</h2>
+                <img src="alphaimage/th (7).jpeg" alt="jelly">
+                <p>Jelly</p>
+            </div>
+            <div class="alphabet-card" id="k">
+                <h2>Kk</h2>
+                <img src="alphaimage/th (8).jpeg" alt="kite">
+                <p>Kite</p>
+            </div>
+            <div class="alphabet-card" id="l">
+                <h2>Ll</h2>
+                <img src="alphaimage/th (9).jpeg" alt="leaf">
+                <p>Leaf</p>
+            </div>
+            <div class="alphabet-card" id="m">
+                <h2>Mm</h2>
+                <img src="alphaimage/th (10).jpeg" alt="mango">
+                <p>Mango</p>
+            </div>
+            <div class="alphabet-card" id="n">
+                <h2>Nn</h2>
+                <img src="alphaimage/th (11).jpeg" alt="nest">
+                <p>Nest</p>
+            </div>
+            <div class="alphabet-card" id="o">
+                <h2>Oo</h2>
+                <img src="alphaimage/th (13).jpeg" alt="owl">
+                <p>Owl</p>
+            </div>
+            <div class="alphabet-card" id="p">
+                <h2>Pp</h2>
+                <img src="alphaimage/th (12).jpeg" alt="parrot">
+                <p>Parrot</p>
+            </div>
+            <div class="alphabet-card" id="q">
+                <h2>Qq</h2>
+                <img src="alphaimage/th (14).jpeg" alt="queen">
+                <p>Queen</p>
+            </div>
+            <div class="alphabet-card" id="r">
+                <h2>Rr</h2>
+                <img src="alphaimage/th (15).jpeg" alt="rabbit">
+                <p>Rabbit</p>
+            </div>
+            <div class="alphabet-card" id="s">
+                <h2>Ss</h2>
+                <img src="alphaimage/th (16).jpeg" alt="ship">
+                <p>Ship</p>
+            </div>
+            <div class="alphabet-card" id="t">
+                <h2>Tt</h2>
+                <img src="alphaimage/th (17).jpeg" alt="tree">
+                <p>Tree</p>
+            </div>
+            <div class="alphabet-card" id="u">
+                <h2>Uu</h2>
+                <img src="alphaimage/th (18).jpeg" alt="umbrella">
+                <p>Umbrella</p>
+            </div>
+            <div class="alphabet-card" id="v">
+                <h2>Vv</h2>
+                <img src="alphaimage/th (19).jpeg" alt="vase">
+                <p>Vase</p>
+            </div>
+            <div class="alphabet-card" id="w">
+                <h2>Ww</h2>
+                <img src="alphaimage/th (20).jpeg" alt="whale">
+                <p>Whale</p>
+            </div>
+            <div class="alphabet-card" id="x">
+                <h2>Xx</h2>
+                <img src="alphaimage/th (21).jpeg" alt="Xmas">
+                <p>Xmas Tree</p>
+            </div>
+            <div class="alphabet-card" id="y">
+                <h2>Yy</h2>
+                <img src="alphaimage/th (22).jpeg" alt="yak">
+                <p>Yak</p>
+            </div>
+            <div class="alphabet-card" id="z">
+                <h2>Zz</h2>
+                <img src="alphaimage/th (23).jpeg" alt="zebra">
+                <p>Zebra</p>
+            </div>
+
+            <!-- Add other letters similarly -->
+        </div>
+    </main>
+
+   <!-- Footer section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h1>LEARNIVERSE</h1>
+            <p>Preparing kids everywhere with the skills they'll need for the world of tomorrow.</p>
+            <img src="Images/logo formatted.png" alt="" class="image">
+    
+          </div>
+        <!-- For Parents section -->
+        <div class="footer-section">
+            <h3>For Parents</h3>
+            <ul>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Start a Free Trial</a></li>
+                <li><a href="#">Subscription</a></li>
+            </ul>
+        </div>
+
+        <!-- Learniverse section -->
+        <div class="footer-section">
+            <h3>LEARNIVERSE</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">The Foo Store</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer bottom section -->
+    <div class="footer-bottom">
+        <p>© Learniverse 2024</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolly rhymes for kindergarten</title>
+    <style>
+       /* General reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #df1d16;
+    padding: 20px 0;
+    border-bottom: 5px solid #7b1111;
+    border-top: 5px solid #7b1111;
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #120909;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #fff8e1;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #63cf04;
+    transform: scale(1.1);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf0ca;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #ff7f50;
+    color: rgb(7, 5, 5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+#img1{
+    height: 180px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+#img2{
+    height: 180px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.video-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 70px;
+  padding: 90px;
+}
+
+.video-card {
+    background-color: rgb(242, 221, 39);
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    height: 350px;
+    width: 420px;
+    text-align: center;
+}
+.video-card:hover{
+    background-color: #6ec60e;
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(9, 5, 5, 0.2);
+}
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border-radius: 9px;
+}
+.last-content{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    padding: 7px;
+    position: absolute;
+    top: 1180px;
+    background-color: #ff7f50;
+}
+.last-content:hover{
+    background-color: #6ec60e;
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(9, 5, 5, 0.2);
+}
+/* Footer */
+footer {
+    background-color: rgb(238, 171, 47);
+    color:#2c3e50;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+.footer {
+    background-color: #123456; /* Replace with your color code */
+    color: #fff;
+    padding: 30px 0;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .store-buttons a img {
+    width: 120px;
+    margin: 5px;
+  }
+  
+  .footer-section {
+    max-width: 200px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  .footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .image{
+    height: 90px;
+  }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bringing Poems to Life, One Video at a Time!</h1>
+        <p>Learn, Laugh, and Grow!</p>
+    </header>
+    <nav>
+      <div class="container">
+          <ul>
+              <li><a href="Eng.html" style="font-size: 20px;">English-Home</a></li>
+              <li><a href="alphabet.html" style="font-size: 20px;">ABC</a></li>
+              <li><a href="animals.html" style="font-size: 20px;">Animals</a></li>
+              <li><a href="stories.html" style="font-size: 20px;">Stories</a></li>
+              <li><a href="rhymes.html" style="font-size: 20px;">Rhymes</a></li>
+          </ul>
+      </div>
+  </nav>
+    <div>
+        <img src="poemimage/children-reading-park_1308-36320.jpg" alt="kids" id="img1">
+        <img src="poemimage/empty-board-with-cartoon-kids_1639-40542.jpg" alt="kids" id="img2">
+    </div>
+    <section class="video-grid">
+        <div class="video-card">
+            <h2>Twinkle Twinkle Little Star</h2>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/yCjJyiqpAuU" title="Twinkle Twinkle Little Star | Nursery Rhymes for Kids | Super Simple Songs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-card">
+            <h2>Baa Baa Black Sheep</h2>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/oSNdO4E_yXo" title="Baa Baa Black Sheep Song | Lalafun Nursery Rhymes &amp; Kids Songs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-card">
+            <h2>Old MacDonald Had a Farm</h2>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/drkOBuiGPCM" title="Old MacDonald Song with Safari Animals | Lalafun Nursery Rhymes &amp; Kids Songs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-card">
+            <h2>Wheels On The Bus</h2>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/7iZnwXGHND8" title="🌞 Wheels on the Bus at the Picnic! 🚌 | Newborn Baby Songs &amp; Nursery Rhymes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <div class="last-content">
+        <h3>For more fun & learning!</h3>
+        <p><a href="https://www.weareteachers.com/kindergarten-poems-for-kids/">Go Through This Website</a></button></p>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <h1>LEARNIVERSE</h1>
+            <p>Preparing kids everywhere with the skills they'll need for the world of tomorrow.</p>
+            <img src="Images/logo formatted.png" alt="" class="image">
+
+          </div>
+      
+          <div class="footer-section">
+            <h3>For Parents</h3>
+            <ul>
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Start a Free Trial</a></li>
+              <li><a href="#">Subscription</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+
+      
+          <div class="footer-section">
+
+          </div>
+      
+          <div class="footer-section">
+            <h3>LEARNIVERSE</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">The Foo Store</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        
+    </div>
+    <div class="footer-bottom">
+      <p>© Learniverse 2024</p><br>
+      <p>All rights reserved</p>
+      <ul>
+      </footer>
+</body>
+</html>

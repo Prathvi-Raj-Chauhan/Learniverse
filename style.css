@@ -1,0 +1,394 @@
+
+
+body {
+    box-sizing: border-box;
+    /* cursor: url('./Images/cursor.png'), auto;  */
+    cursor: url('.//Images/cursor.png'), auto;
+    background-color: beige;/* Ensures padding and border are included in element's dimensions */
+}
+.nav{
+    position: fixed; /* Keeps the navbar fixed on the screen */
+    top: 0; /* Position it at the very top of the viewport */
+    left: 0; /* Align it to the left edge */
+    width: 100%; /* Make it span the entire width */
+    z-index: 1000; /* Ensures it stays above other elements */
+    background-color: #fc619d; /* Optional: Add a background to prevent content overlap */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a clean look */
+    padding: 10px; /* Add padding to make it visually appealing */
+    margin-top: 0;
+    padding: 0;
+    width: 100%; /* Make sure the nav spans the full width */
+    font-size: 18px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    height: 150px;
+    /* gap: 90px; */
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+}
+.logo-placeholder{
+
+    width: 300px;
+    height: 100px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* border: 2px dashed #ccc; */
+    /* color: #888; */
+    /* font-size: 14px; */
+    /* text-align: center; */
+    background-image: url('.//Images/logo\ formatted.png'); /* Replace 'logo.png' with your logo file's path */
+    background-size: contain; /* Ensures the logo fits inside the placeholder */
+    background-repeat: no-repeat; /* Prevents the logo from repeating */
+    background-position: center; /* Centers the logo */
+    border: none; /* Remove the dashed border if you no longer need it */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#dropdown{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    color: black;
+    width: 150px; /* Set a fixed width for the dropdown */
+    padding: 5px; /* Add padding for better aesthetics */
+    font-size: 14px; /* Match the text size with other elements */
+    border: 1px solid #ccc; /* Optional: Add a border for styling */
+    border-radius: 4px; /* Optional: Add rounded corners */
+}
+.hero{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #70b7f66f;
+    border: rgb(0, 128, 255) solid 3px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 151px;
+    border-radius: 20px;
+}
+.hero-list{
+    font-size: 20px;
+}
+.hero-image{
+
+    /* margin-top: 30px; */
+}
+.hero-button{
+    
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    color: black;
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    width: 150px;
+    background-color: antiquewhite;
+    border-radius: 12px;
+    height: 50px;
+    transition: all 0.5s ease;
+}
+.hero-button:hover{
+    background-color: #f2ff00; /* Change background color */
+    transform: scale(1.05); /* Slightly enlarge the box */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+.Sub-div{
+    display: flex;
+    margin: 100px;
+    /* padding: 100px; */
+    justify-content: space-evenly;
+
+}
+.cont{
+    font-size: 18px;
+    background-color: #f47aa9;
+    padding: 30px;
+    border: #ff0062 solid 4px;
+    border-radius: 17px;
+    width: 300px;
+    transition: all 0.5s ease;
+}
+.cont:hover{
+    background-color: #45a049; /* Change background color */
+    transform: scale(1.1); /* Slightly enlarge the box */
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.2);/* Add a shadow effect */
+    border: #29532b solid 3px;
+}
+.Fun-Activity{
+    /* margin: 40px; */
+    display: flex;
+    justify-content: space-between;
+}
+.fun-border{
+    margin: 20px;
+    background-color: #70b7f66f;
+    border: rgb(0, 128, 255) solid 3px;
+    border-radius: 20px;
+}
+.fun{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 20px;
+}
+.join-us{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fcc0498f;
+    border: orange solid 4px;
+
+}
+.contus{
+    color: white;
+    background-color: #f780005c;
+    height: 20px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 18px;
+}
+.upper{
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+#Class{
+    width: 150px; /* Set a fixed width for the dropdown */
+    padding: 5px; /* Add padding for better aesthetics */
+    font-size: 14px; /* Match the text size with other elements */
+    border: 1px solid #ccc; /* Optional: Add a border for styling */
+    border-radius: 4px; /* Optional: Add rounded corners */
+}
+#class:hover{
+    background-color: #f2ff00;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.jointbtn{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.jointbtn:hover{
+    transform: scale(1.05);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+h1{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+h2{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+h3{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+p{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+}
+ul{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+}
+li{
+    transition: all 0.5s ease;
+}
+li:hover{
+    transform: scale(1.01);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.822);
+}
+#fun-one{
+    transition: all 0.4s ease;
+    border-radius: 18px;
+    /* background-color: #70b7f66f;
+    border: blue solid 1px; */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+#fun-one:hover{
+    transform: scale(1.01);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.071);
+    background-color: #f2ff00;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#fun-two{
+    transition: all 0.4s ease;
+    border-radius: 18px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+#fun-two:hover{
+    transform: scale(1.01);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: hotpink;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#fun-three{
+    transition: all 0.4s ease;
+    border-radius: 18px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+#fun-three:hover{
+    transform: scale(1.01);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(143, 105, 255, 0.421);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.footer {
+    background-color: #123456; /* Replace with your color code */
+    color: #fff;
+    padding: 30px 0;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .store-buttons a img {
+    width: 120px;
+    margin: 5px;
+  }
+  
+  .footer-section {
+    max-width: 200px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  .footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .image{
+    height: 90px;
+  }
+.nbtn{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    color: black;
+    text-decoration: none;
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+}
+a:hover{
+    color: #e01060;
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+}
+li{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    color: black;
+}
+p{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    color: black;
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kindergarten Story Videos</title>
+  <style>
+    /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navigation Menu Styles */
+nav {
+    background-color: #df1d16;
+    padding: 20px 0;
+    border-bottom: 5px solid #7b1111;
+    border-top: 5px solid #7b1111;
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #120909;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #fff8e1;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #63cf04;
+    transform: scale(1.1);
+}
+
+
+html, body {
+  font-family: 'Comic Sans MS', sans-serif;  /* Fun font for kids */
+  height: 100%;
+  background-color: #faf0ca; /* Bright yellow background */
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* Header Section */
+.header {
+
+  background-color: #ff7f50;  /* Pinkish red header */
+  color: rgb(5, 3, 3);
+  font-family: fantasy;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+/* Main Content Area */
+.container {
+  text-align: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+  gap: 80px;
+  padding: 20px;
+}
+
+.story-box {
+  background-color: #27d9f9;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.story-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.story-box iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+
+.story-box h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #fff;
+  background-color: #ff4081;  /* Pink background for title */
+  padding: 10px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+  transition:background-color 0.3s ease;
+}
+
+.story-box:hover h3 {
+  background-color: #e91e63;  /* Darker pink when hovered */
+}
+
+.story-box a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Footer */
+footer {
+    background-color: #123456; /* Dark blue background for the footer */
+    color: #fff;
+    padding: 30px 0;
+    text-align: left;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Footer container for layout */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer logo section (if applicable) */
+.footer-logo {
+    max-width: 300px;
+    text-align: center;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+/* Social icons */
+.social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Store buttons for app stores (if applicable) */
+.store-buttons a img {
+    width: 120px;
+    margin: 5px;
+}
+
+/* Footer sections like "For Parents", "Learniverse", etc. */
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Image styles for logos or icons */
+.image {
+    height: 90px;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .story-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .story-box iframe {
+    height: 180px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Tales that Spark Wonder and Fun!</h1>
+    <p>Get Ready for Fun, Laughter, and Learning!</p>
+  </header>
+  <nav>
+    <div class="container">
+        <ul>
+            <li><a href="Eng.html" style="font-size: 20px;">English-Home</a></li>
+            <li><a href="alphabet.html" style="font-size: 20px;">ABC</a></li>
+            <li><a href="animals.html" style="font-size: 20px;">Animals</a></li>
+            <li><a href="stories.html" style="font-size: 20px;">Stories</a></li>
+            <li><a href="rhymes.html" style="font-size: 20px;">Rhymes</a></li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="video-grid">
+      
+      <!-- Story Box 1 -->
+      <div class="story-box">
+        <iframe width="1039" height="442" src="https://www.youtube.com/embed/GfsGU4L7iTw" title="Aesop&#39;s Fables &quot;The Tortoise and the Hare&quot; Short Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>The Hare and the Tortoise</h3>
+      </div>
+      
+      <!-- Story Box 2 -->
+      <div class="story-box">
+        <iframe width="928" height="522" src="https://www.youtube.com/embed/9mc8Cp8SZxA" title="The Thirsty Crow | Popular Nursery Rhymes and stories for children | Kidda TV For Children" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>The Thirsty Crow</h3>
+      </div>
+      
+      <!-- Story Box 3 -->
+      <div class="story-box">
+        <iframe width="1039" height="442" src="https://www.youtube.com/embed/_svBrlehmMo" title="Aesop&#39;s Fables &quot;The Ant and the Grasshopper&quot; Short Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Ant and the Grasshopper</h3>
+      </div>
+      
+      <!-- Story Box 4 -->
+      <div class="story-box">
+        <iframe width="1039" height="442" src="https://www.youtube.com/embed/iZ9xK7xIYmI" title="Aesop&#39;s Fables &quot;The Lion and the Mouse&quot; Short Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Lion and the Mouse</h3>
+      </div>
+      
+      <!-- Story Box 5  -->
+      <div class="story-box">
+        <iframe width="928" height="522" src="https://www.youtube.com/embed/IE18GhP6AKE" title="Fox And Grapes English Story | Grapes Are Sour | Story in English I Bedtime Moral Stories for Kids" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Fox and Sour Grapes</h3>
+      </div>
+      <!-- Story Box 6 -->
+      <div class="story-box">
+        <iframe width="1513" height="569" src="https://www.youtube.com/embed/ADi7F695d90" title="Magic Pot | Bedtime Stories for Kids in English | Fairy Tales" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Magic Pot</h3>
+      </div>
+
+      <!-- Story Box 7 -->
+      <div class="story-box">
+        <iframe width="1513" height="569" src="https://www.youtube.com/embed/QUTYxwTsbiM" title="Clever Fish - English Stories For Kids | Moral Stories In English | Short Story In English" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Clever Fish</h3>
+      </div>
+
+      <!-- Story Box 8 -->
+      <div class="story-box">
+        <iframe width="1513" height="569" src="https://www.youtube.com/embed/HDr1D54vs98" title="Arjuna Stories - Arjuna&#39;s Aim - Short Story form Mahabharat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Arjuna's Aim</h3>
+      </div>
+      
+    </div>
+  </div>
+<!--footer section-->
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h1>LEARNIVERSE</h1>
+            <p>Preparing kids everywhere with the skills they'll need for the world of tomorrow.</p>
+            <img src="Images/logo formatted.png" alt="" class="image">
+    
+          </div>
+        <!-- For Parents section -->
+        <div class="footer-section">
+            <h3>For Parents</h3>
+            <ul>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Start a Free Trial</a></li>
+                <li><a href="#">Subscription</a></li>
+            </ul>
+        </div>
+
+        <!-- Learniverse section -->
+        <div class="footer-section">
+            <h3>LEARNIVERSE</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">The Foo Store</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer bottom section -->
+    <div class="footer-bottom">
+        <p>© Learniverse 2024</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #fff8e1;
+    color: #333;
+    line-height: 1.5;
+}
+#fun{
+    height: 200px;
+    position: absolute;
+    top:0px;
+}
+#study{
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#child{
+    height: 200px;
+    position:absolute;
+    top: 360px;
+    right: 0px;
+}
+#kids{
+    height: 200px;
+    position:absolute;
+    top: 360px;
+    left: 0px;
+}
+
+/* Header styles */
+header {
+    background-color: #ff69b4;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 8px solid #790b78;
+}
+
+header h1 {
+    font-size: 64px;
+    color: #ffffff;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+header p {
+    font-size: 28px;
+    color: #ffffff;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Navigation Menu Styles */
+nav {
+    background-color: #df1688;
+    padding: 20px 0;
+    border-bottom: 5px solid #871470;
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #120909;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #fff8e1;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #caa0dbc7;
+    transform: scale(1.1);
+}
+
+/* Main Content Styles */
+main {
+    padding: 70px 0;
+}
+
+main .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section.intro h2 {
+    font-size: 48px;
+    color: #ff69b4;
+}
+
+section.intro p {
+    font-size: 24px;
+    color: #444;
+}
+
+section.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.feature-box {
+    background-color: #ffebcd;
+    border-radius: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box h3 {
+    font-size: 36px;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+.feature-box p {
+    font-size: 22px;
+    color: #444;
+    margin-top: 15px;
+}
+
+.feature-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.feature-img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+footer {
+    background-color: rgb(238, 171, 47);
+    color:#2c3e50;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+.footer {
+    background-color: #123456; /* Replace with your color code */
+    color: #fff;
+    padding: 30px 0;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .store-buttons a img {
+    width: 120px;
+    margin: 5px;
+  }
+  
+  .footer-section {
+    max-width: 200px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  .footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .image{
+    height: 90px;
+  }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .feature-box {
+        padding: 20px;
+    }
+
+    .feature-box h3 {
+        font-size: 28px;
+    }
+
+    .feature-box p {
+        font-size: 20px;
+    }
+
+    .feature-img {
+        width: 100%;
+    }
+}
+

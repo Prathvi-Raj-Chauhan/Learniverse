@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Learning for Kindergarten</title>
+   <style>
+    /* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf0ca;
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Menu Styles */
+nav {
+    background-color: #df1d16;
+    padding: 20px 0;
+    border-bottom: 5px solid #7b1111;
+    border-top: 5px solid #7b1111;
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #120909;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #fff8e1;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #63cf04;
+    transform: scale(1.1);
+}
+
+
+/* Header Section */
+header {
+    font-family: fantasy;
+    background-color: #ff7f50;
+    color: rgb(7, 5, 5);
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+#elephant{
+    height: 215px;
+    position: absolute;
+    top: 0px;
+
+}
+#koala{
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/* Main Content Section */
+main {
+    padding: 30px;
+}
+
+/* Animal Section Layout */
+.animal-section {
+  text-align: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+  gap: 80px;
+  padding: 10px;
+}
+
+/* Individual Animal Box */
+.animal-box {
+    background-color: #f3fb5f;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.animal-box:hover {
+    transform: scale(1.05);
+}
+
+/* Animal Title Styling */
+
+
+/* Styling for the embedded YouTube iframe */
+.animal-box iframe {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+@media (max-width: 780px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  .animal-box h2 {
+    color: #4caf50;
+    font-size: 30px;
+}
+  .animal-box p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Footer */
+footer {
+    background-color: #123456; /* Dark blue background for the footer */
+    color: #fff;
+    padding: 30px 0;
+    text-align: left;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Footer container for layout */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer logo section (if applicable) */
+.footer-logo {
+    max-width: 300px;
+    text-align: center;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+/* Social icons */
+.social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Store buttons for app stores (if applicable) */
+.store-buttons a img {
+    width: 120px;
+    margin: 5px;
+}
+
+/* Footer sections like "For Parents", "Learniverse", etc. */
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Image styles for logos or icons */
+.image {
+    height: 90px;
+}
+
+
+
+   </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Animal Learning!</h1>
+        <p>Discover the amazing world of animals with fun videos!</p>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="Eng.html" style="font-size: 20px;">English-Home</a></li>
+                <li><a href="alphabet.html" style="font-size: 20px;">ABC</a></li>
+                <li><a href="animals.html" style="font-size: 20px;">Animals</a></li>
+                <li><a href="stories.html" style="font-size: 20px;">Stories</a></li>
+                <li><a href="rhymes.html" style="font-size: 20px;">Rhymes</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main Content Section -->
+    <main>
+        <div>
+            <img src="animalimage/happy-kid-riding-elephant-cartoon-style_1308-138219.jpg" alt="animal" id="elephant">
+        </div>
+        <div>
+            <img src="animalimage/cartoon-cute-koala-waving-hand_29190-107.jpg" alt="koala" id="koala">
+        </div>
+     <div class="animal-section">
+        <div class="video-grid">
+
+            <div class="animal-box">
+                <h2>Lion</h2>
+                <iframe width="320" height="200" src="https://www.youtube.com/embed/tlZwYsJpqjo" title="African Lion 🦁 | Amazing Animals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Watch this video and discover the King of the Jungle!</p>
+            </div>
+
+            <div class="animal-box">
+                <h2>Elephant</h2>
+                <iframe width="320" height="200" src="https://www.youtube.com/embed/Fk3VdpuFx0Q" title="African Elephant 🐘 | Amazing Animals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Learn about the amazing Elephant!</p>
+            </div>
+
+            <div class="animal-box">
+                <h2>Monkey</h2>
+                <iframe width="320" height="200" src="https://www.youtube.com/embed/vOY6x4NksIk" title="MONKEYS for Kids | Fun Monkey Facts for Children!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Check out this childish Monkey!</p>
+                </div>
+                <div class="animal-box">
+                    <h2>Bear</h2>
+                    <iframe width="320" height="200" src="https://www.youtube.com/embed/K-3snCVlrJ8" title="The Bear, a very Cute Mammal | Video for Children" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Know more about Big Bear</p>
+                    </div>
+        </div>
+    </div>
+    </main>
+    <!--Footer section-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>LEARNIVERSE</h1>
+                <p>Preparing kids everywhere with the skills they'll need for the world of tomorrow.</p>
+                <img src="Images/logo formatted.png" alt="" class="image">
+        
+              </div>
+            <!-- For Parents section -->
+            <div class="footer-section">
+                <h3>For Parents</h3>
+                <ul>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Start a Free Trial</a></li>
+                    <li><a href="#">Subscription</a></li>
+                </ul>
+            </div>
+    
+            <!-- Learniverse section -->
+            <div class="footer-section">
+                <h3>LEARNIVERSE</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">The Foo Store</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Footer bottom section -->
+        <div class="footer-bottom">
+            <p>© Learniverse 2024</p>
+            <p>All rights reserved</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

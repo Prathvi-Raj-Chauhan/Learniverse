@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhymes for Kindergarten</title>
+  <style>
+    /* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf0ca;
+  color: #333;
+}
+nav {
+    background-color: #df1d16;
+    padding: 20px 0;
+    border-bottom: 5px solid #7b1111;
+    border-top: 5px solid #7b1111;
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #120909;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #fff8e1;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #63cf04;
+    transform: scale(1.1);
+}
+header {
+  background-color: #ff7f50;
+  color: rgb(10, 4, 4);
+  text-align: center;
+  padding: 40px 20px;
+}
+#head{
+  height: 185px;
+  position: absolute;
+  top: 0px;
+  right:0px;
+}
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+#head2{
+  height: 185px;
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+#img1{
+  height: 150px;
+  position: absolute;
+  top: 450px;
+  right: 0px;
+}
+#img2{
+  height: 290px;
+  position: absolute;
+  top: 400px;
+  left: 0px;
+}
+/* Section containing inline block boxes */
+#boxes {
+  padding: 20px;
+  text-align: center;
+}
+.image{
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.box {
+  display: inline-block;
+  background-color: #ffeb3b;
+  padding: 20px;
+  margin: 15px;
+  width: 250px;  /* Fixed width for each box */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  vertical-align: top;  /* Ensures boxes align properly */
+  transition: all 0.3s ease;
+}
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.box p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(238, 171, 47);
+    color:#2c3e50;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+.footer {
+    background-color: #123456; /* Replace with your color code */
+    color: #fff;
+    padding: 30px 0;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .store-buttons a img {
+    width: 120px;
+    margin: 5px;
+  }
+  
+  .footer-section {
+    max-width: 200px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  .footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .image{
+    height: 90px;
+  }
+/* Responsive design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fun Learning for Kindergarten!</h1>
+    <p>Explore Poem and More in Colorful Boxes</p>
+  </header>
+  <nav>
+    <div class="container">
+        <ul>
+            <li><a href="Eng.html" style="font-size: 20px;">English-Home</a></li>
+            <li><a href="alphabet.html" style="font-size: 20px;">ABC</a></li>
+            <li><a href="animals.html" style="font-size: 20px;">Animals</a></li>
+            <li><a href="stories.html" style="font-size: 20px;">Stories</a></li>
+            <li><a href="rhymes.html" style="font-size: 20px;">Rhymes</a></li>
+        </ul>
+    </div>
+</nav>
+
+  <section id="boxes">
+    <div>
+      <img src="poemimage/boy-girl-flying-book_29190-4631.jpg" alt="girl" id="head"> </div>
+      <div>
+        <img src="poemimage/speech-bubble-with-boy-reading-book_1308-103564.jpg" alt="boy" id="head2">
+      </div>
+    <div class="box">
+      <h2>Twinkle Twinkle!</h2>
+      <img src="poemimage/cartoon-christmas-tree-with-star-top_853677-339748.jpg" alt="stars" class="image">
+      <p>Twinkle, twinkle, little star,</p>
+      <p>How I wonder what you are! </p>
+      <p>Up above the world so high,</p>
+      <p>Like a diamond in the sky!</p>
+      <p>Twinkle, twinkle, little star,</p>
+      <p>How I wonder what you are!</p>
+      
+    </div>
+
+    <div class="box">
+        
+      <h2>Baa baa black-sheep</h2>
+      <img src="poemimage/cartoon-cute-sheep-isolated-beautiful-farm-garden_667558-62.jpg" alt="stars" class="image">
+      <p>Baa, baa, black sheep,</p>
+      <p>Have you any wool?</p>
+      <p> Yes sir, yes sir,</p><br>
+      <p>One for the master,</p>
+      <p>One for the dame,</p>
+      <p>And one for the little boy</p>
+      <p>Who lives down the lane.</p>
+    </div>
+
+    <div class="box">
+      <h2>The Little Bird</h2>
+      <img src="poemimage/cartoon-drawing-red-blue-bird-tree-branch_1199645-1650.avif" alt="rain" class="image">
+      <p>A little bird flew in the sky,
+    </p>
+      <p>Waving its wings as it flew by.</p>
+      <p>It chirped a song so sweet & clear,</p>
+      <p>Spreading joy for all to hear!</p>
+    </div>
+    <div class="box">
+      <h2>Rain rain go away</h2>
+      <img src="poemimage/happy-girls-playing-rain_43633-10540.avif" alt="rain" class="image">
+      <p>Rain, rain, go away,</p>
+      <p>Come again another day.</p>
+      <p>Little Johnny wants to play,</p>
+      <p>Rain, rain, go away.</p>
+      <p>Rain, rain, go away</p>
+      <p>Come again another day</p>
+        <p>All the family wants to play</p>
+        <p>Rain, rain, go away</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h1>LEARNIVERSE</h1>
+        <p>Preparing kids everywhere with the skills they'll need for the world of tomorrow.</p>
+        <img src="Images/logo formatted.png" alt="" class="image">
+
+      </div>
+  
+      <div class="footer-section">
+        <h3>For Parents</h3>
+        <ul>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Start a Free Trial</a></li>
+          <li><a href="#">Subscription</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+
+  
+      <div class="footer-section">
+
+      </div>
+  
+      <div class="footer-section">
+        <h3>LEARNIVERSE</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">The Foo Store</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    
+</div>
+<div class="footer-bottom">
+  <p>© Learniverse 2024</p><br>
+  <p>All rights reserved</p>
+  <ul>
+  </footer>
+</body>
+</html>
