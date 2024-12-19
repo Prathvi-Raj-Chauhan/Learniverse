@@ -104,6 +104,7 @@ body {
     background-color: #f2ff00; 
     transform: scale(1.05); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
 .Sub-div{
     display: flex;
     margin: 100px;
@@ -390,5 +391,4 @@ p{
     font-variation-settings:
       "wdth" 100;
     color: black;
-}
 }
