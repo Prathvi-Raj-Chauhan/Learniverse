@@ -13,7 +13,7 @@ This project was brought to life by a team of passionate developers:
 - **Prashant Rajput**  
 - **Isha Tyagi**  
 - **Kirti Sharma**  
-- **Prathvi Raj Chauhan** (Team Lead)  
+- **Prathvi Raj Chauhan**
 
 ## Technologies Used 💻  
 - **HTML5**  
