@@ -4,20 +4,20 @@ body {
     box-sizing: border-box;
     /* cursor: url('./Images/cursor.png'), auto;  */
     cursor: url('.//Images/cursor.png'), auto;
-    background-color: beige;/* Ensures padding and border are included in element's dimensions */
+    background-color: beige;
 }
 .nav{
-    position: fixed; /* Keeps the navbar fixed on the screen */
-    top: 0; /* Position it at the very top of the viewport */
-    left: 0; /* Align it to the left edge */
-    width: 100%; /* Make it span the entire width */
-    z-index: 1000; /* Ensures it stays above other elements */
-    background-color: #fc619d; /* Optional: Add a background to prevent content overlap */
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a clean look */
-    padding: 10px; /* Add padding to make it visually appealing */
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+    background-color: #fc619d; 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
     margin-top: 0;
     padding: 0;
-    width: 100%; /* Make sure the nav spans the full width */
+    width: 100%;
     font-size: 18px;
     display: flex;
     flex-wrap: nowrap;
@@ -40,11 +40,11 @@ body {
     /* color: #888; */
     /* font-size: 14px; */
     /* text-align: center; */
-    background-image: url('.//Images/logo\ formatted.png'); /* Replace 'logo.png' with your logo file's path */
-    background-size: contain; /* Ensures the logo fits inside the placeholder */
-    background-repeat: no-repeat; /* Prevents the logo from repeating */
-    background-position: center; /* Centers the logo */
-    border: none; /* Remove the dashed border if you no longer need it */
+    background-image: url('.//Images/logo\ formatted.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    border: none; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,11 +58,11 @@ body {
     font-variation-settings:
       "wdth" 100;
     color: black;
-    width: 150px; /* Set a fixed width for the dropdown */
-    padding: 5px; /* Add padding for better aesthetics */
-    font-size: 14px; /* Match the text size with other elements */
-    border: 1px solid #ccc; /* Optional: Add a border for styling */
-    border-radius: 4px; /* Optional: Add rounded corners */
+    width: 150px; 
+    padding: 5px; 
+    font-size: 14px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
 }
 .hero{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -101,10 +101,9 @@ body {
     transition: all 0.5s ease;
 }
 .hero-button:hover{
-    background-color: #f2ff00; /* Change background color */
-    transform: scale(1.05); /* Slightly enlarge the box */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-}
+    background-color: #f2ff00; 
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 .Sub-div{
     display: flex;
     margin: 100px;
@@ -122,9 +121,9 @@ body {
     transition: all 0.5s ease;
 }
 .cont:hover{
-    background-color: #45a049; /* Change background color */
-    transform: scale(1.1); /* Slightly enlarge the box */
-    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.2);/* Add a shadow effect */
+    background-color: #45a049; 
+    transform: scale(1.1); 
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.2);
     border: #29532b solid 3px;
 }
 .Fun-Activity{
@@ -167,11 +166,11 @@ body {
     justify-content: space-around;
 }
 #Class{
-    width: 150px; /* Set a fixed width for the dropdown */
-    padding: 5px; /* Add padding for better aesthetics */
-    font-size: 14px; /* Match the text size with other elements */
-    border: 1px solid #ccc; /* Optional: Add a border for styling */
-    border-radius: 4px; /* Optional: Add rounded corners */
+    width: 150px; 
+    padding: 5px;
+    font-size: 14px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
 }
 #class:hover{
     background-color: #f2ff00;
@@ -391,4 +390,5 @@ p{
     font-variation-settings:
       "wdth" 100;
     color: black;
+}
 }
